@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LUXE VIP EXPRESS — Luxury Sprinter & SUV Service</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <h1 class="hero-brand">LUXE VIP EXPRESS</h1>
+        <p class="hero-tagline">Shuttle Service</p>
+        <p class="hero-phone">708-477-8459</p>
+
+        <ul class="hero-bullets">
+          <li>Seats up to 8 passengers</li>
+          <li>Professional driver included</li>
+          <li>Clean, spacious, air-conditioned</li>
+          <li>Flexible scheduling</li>
+          <li>Affordable hourly rates</li>
+        </ul>
+
+        <!-- Hero Stripe button -->
+        <div class="hero-actions">
+          <a
+            href="https://buy.stripe.com/test_bJe4gzg6ubI19XyesA8EM00"
+            class="btn hero-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            BOOK NOW
+          </a>
+        </div>
+
+        <p class="hero-email">
+          Email:
+          <a href="mailto:Luxvipservice76@gmail.com">Luxvipservice76@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Strip -->
+  <div class="contact-strip">
+    <span>Luxury Sprinter Van & Black SUV Service • Chicago & Surrounding Areas</span>
+    <span>Call <a href="tel:+17084778459">708-477-8459</a></span>
+  </div>
+
+  <main>
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About LUXE VIP EXPRESS</h2>
+      <p>
+        LUXE VIP EXPRESS provides private, VIP-level transportation for airport transfers,
+        weddings, corporate events, church services, funerals, concerts, and special occasions.
+      </p>
+      <p>
+        Our luxury Sprinter van and black SUV are kept clean, comfortable, and ready for your next trip.
+        Professional, punctual drivers ensure you arrive safely and on time.
+      </p>
+    </section>
+
+    <!-- Fleet & Rates -->
+    <section id="fleet" class="section section-alt">
+      <h2>Our Fleet & Rates</h2>
+      <div class="cards">
+        <!-- Sprinter Van Card -->
+        <article class="card">
+          <img src="assets/sprinter-van.jpg" alt="Luxury Sprinter Van" class="fleet-img">
+          <h3>Luxury Sprinter Van</h3>
+          <p class="rate">$125 / hour</p>
+          <ul>
+            <li>Ideal for groups, church outings, and events</li>
+            <li>Spacious interior with comfortable seating</li>
+            <li>Perfect for weddings, family trips, and tours</li>
+          </ul>
+          <a
+            href="https://buy.stripe.com/test_bJe4gzg6ubI19XyesA8EM00"
+            class="btn primary wide"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book Sprinter Van
+          </a>
+        </article>
+
+        <!-- Black SUV Card -->
+        <article class="card">
+          <img src="assets/sprinter-interior.jpg" alt="Black SUV Interior" class="fleet-img">
+          <h3>Black SUV</h3>
+          <p class="rate">$100 / hour</p>
+          <ul>
+            <li>Perfect for executives and small groups</li>
+            <li>Airport transfers, corporate travel, and nights out</li>
+            <li>Clean, discreet, and professional</li>
+          </ul>
+          <a
+            href="https://buy.stripe.com/test_cNi8wP8E2dQ9b1C0BK8EM01"
+            class="btn primary wide"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book Black SUV
+          </a>
+        </article>
+      </div>
+      <p class="fleet-note">
+        Final pricing may vary based on distance, duration, tolls, and special requests.
+      </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <h2>Service Highlights</h2>
+      <div class="cards">
+        <article class="card small">
+          <h3>Airport Transfers</h3>
+          <p>On-time pickups and drop-offs for O’Hare, Midway, and private airports.</p>
+        </article>
+        <article class="card small">
+          <h3>Events & Special Occasions</h3>
+          <p>Weddings, funerals, church functions, family events, concerts, and more.</p>
+        </article>
+        <article class="card small">
+          <h3>Corporate & Group Travel</h3>
+          <p>Reliable transportation for meetings, conferences, and client visits.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking" class="section section-alt">
+      <h2>Request a Booking</h2>
+      <p>Please share your trip details and we will contact you to confirm availability and pricing.</p>
+
+      <form id="booking-form" class="form">
+        <div class="form-row">
+          <label>
+            Name<br>
+            <input id="name" type="text" name="name" required>
+          </label>
+          <label>
+            Email<br>
+            <input id="email" type="email" name="email" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            Phone (optional)<br>
+            <input id="phone" type="tel" name="phone" placeholder="708-477-8459">
+          </label>
+          <label>
+            Vehicle Type<br>
+            <select id="vehicleType" name="vehicleType" required>
+              <option>Sprinter Van ($125/hr)</option>
+              <option>Black SUV ($100/hr)</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            Date of Trip<br>
+            <input id="date" type="date" name="date" required>
+          </label>
+          <label>
+            Time (optional)<br>
+            <input id="time" type="time" name="time">
+          </label>
+        </div>
+
+        <label>
+          Trip Details<br>
+          <textarea id="details" name="details" rows="4"
+            placeholder="Pickup location, drop-off, number of passengers, hours needed, special requests..."
+            required></textarea>
+        </label>
+
+        <button type="submit" class="btn primary wide">Submit Booking Request</button>
+        <p id="booking-status" class="booking-status"></p>
+      </form>
+
+      <p class="social">
+        Prefer to message us? Find us on Facebook:
+        <a href="https://facebook.com/LUXVIPEXPRESS" target="_blank">LUX VIP EXPRESS</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="y"></span> LUXE VIP EXPRESS • Chicago, IL</p>
+    <p>
+      Call <a href="tel:+17084778459">708-477-8459</a> ·
+      Email <a href="mailto:Luxvipservice76@gmail.com">Luxvipservice76@gmail.com</a>
+    </p>
+  </footer>
+
+  <!-- === Scripts === -->
+  <script>
+    // Set year in footer
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    // ✅ Your AWS API endpoint for the booking form
+    const BOOKING_ENDPOINT = "https://zyzn9avvkl.execute-api.us-east-1.amazonaws.com/prod/contact";
+
+    // Handle form submission
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("booking-form");
+      const statusEl = document.getElementById("booking-status");
+
+      if (!form) {
+        console.warn("Booking form not found on this page.");
+        return;
+      }
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        statusEl.textContent = "Sending your request...";
+        statusEl.style.color = "#fbbf24";
+
+        const formData = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          phone: document.getElementById("phone").value,
+          vehicleType: document.getElementById("vehicleType").value,
+          date: document.getElementById("date").value,
+          time: document.getElementById("time").value,
+          details: document.getElementById("details").value
+        };
+
+        try {
+          const response = await fetch(BOOKING_ENDPOINT, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData)
+          });
+
+          if (!response.ok) {
+            statusEl.textContent =
+              `Error ${response.status}: Request failed. Please try again or call 708-477-8459.`;
+            statusEl.style.color = "#f87171";
+            return;
+          }
+
+          statusEl.textContent = "Booking request sent! We’ll contact you shortly.";
+          statusEl.style.color = "#4ade80";
+          form.reset();
+        } catch (err) {
+          console.error(err);
+          statusEl.textContent = "Network error: failed to fetch";
+          statusEl.style.color = "#f87171";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
